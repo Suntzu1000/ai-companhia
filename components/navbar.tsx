@@ -27,14 +27,14 @@ export const Navbar = ({
         <MobileSidebar isPro={isPro} />
         <Link href="/">
           <h1 className={cn("hidden md:block text-xl md:text-3xl font-bold text-primary", font.className)}>
-            companion.ai
+            companhia.ai
           </h1>
         </Link>
       </div>
       <div className="flex items-center gap-x-3">
         {!isPro && (
           <Button onClick={proModal.onOpen} size="sm" variant="premium">
-            Upgrade
+            Atualizar
             <Sparkles className="h-4 w-4 fill-white text-white ml-2" />
           </Button>
         )}

@@ -35,7 +35,7 @@ export const ProModal = () => {
       window.location.href = response.data.url;
     } catch (error) {
       toast({
-        description: "Something went wrong",
+        description: "Algo deu errado",
         variant: "destructive",
       });
     } finally {
@@ -52,11 +52,11 @@ export const ProModal = () => {
       <DialogContent>
         <DialogHeader className="space-y-4">
           <DialogTitle className="text-center">
-            Upgrade to Pro
+            Atualizar para Pro
           </DialogTitle>
           <DialogDescription className="text-center space-y-2">
-            Create
-            <span className="text-sky-500 mx-1 font-medium">Custom AI</span>
+            Criar
+            <span className="text-sky-500 mx-1 font-medium">IA personalizada</span>
             Companions!
           </DialogDescription>
         </DialogHeader>
@@ -66,7 +66,7 @@ export const ProModal = () => {
             $9<span className="text-sm font-normal">.99 / mo</span>
           </p>
           <Button onClick={onSubscribe} disabled={loading} variant="premium">
-            Subscribe
+            Inscrever
           </Button>
         </div>
       </DialogContent>

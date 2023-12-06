@@ -110,9 +110,9 @@ export const CompanionForm = ({
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 pb-10">
           <div className="space-y-2 w-full col-span-2">
             <div>
-              <h3 className="text-lg font-medium">General Information</h3>
+              <h3 className="text-lg font-medium">Informações gerais</h3>
               <p className="text-sm text-muted-foreground">
-                General information about your Companion
+              Informações gerais Sobre a Companhia
               </p>
             </div>
             <Separator className="bg-primary/10" />
@@ -134,12 +134,12 @@ export const CompanionForm = ({
               control={form.control}
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel>Nome</FormLabel>
                   <FormControl>
-                    <Input disabled={isLoading} placeholder="Elon Musk" {...field} />
+                    <Input disabled={isLoading} placeholder="" {...field} />
                   </FormControl>
                   <FormDescription>
-                    This is how your AI Companion will be named.
+                  É assim que seu AI Companion será nomeado.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -150,12 +150,12 @@ export const CompanionForm = ({
               control={form.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Description</FormLabel>
+                  <FormLabel>Descrição</FormLabel>
                   <FormControl>
                     <Input disabled={isLoading} placeholder="CEO & Founder of Tesla, SpaceX" {...field} />
                   </FormControl>
                   <FormDescription>
-                    Short description for your AI Companion
+                  Breve descrição para o seu AI Companion
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -166,7 +166,7 @@ export const CompanionForm = ({
               name="categoryId"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Category</FormLabel>
+                  <FormLabel>Categoria</FormLabel>
                   <Select disabled={isLoading} onValueChange={field.onChange} value={field.value} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger className="bg-background">
@@ -180,7 +180,7 @@ export const CompanionForm = ({
                     </SelectContent>
                   </Select>
                   <FormDescription>
-                    Select a category for your AI
+                  Selecione uma categoria para sua IA
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -189,9 +189,9 @@ export const CompanionForm = ({
           </div>
           <div className="space-y-2 w-full">
             <div>
-              <h3 className="text-lg font-medium">Configuration</h3>
+              <h3 className="text-lg font-medium">Configução</h3>
               <p className="text-sm text-muted-foreground">
-                Detailed instructions for AI Behaviour
+              Instruções detalhadas para comportamento de IA
               </p>
             </div>
             <Separator className="bg-primary/10" />
@@ -201,12 +201,12 @@ export const CompanionForm = ({
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Instructions</FormLabel>
+                <FormLabel>Instruções</FormLabel>
                 <FormControl>
                   <Textarea disabled={isLoading} rows={7} className="bg-background resize-none" placeholder={PREAMBLE} {...field} />
                 </FormControl>
                 <FormDescription>
-                  Describe in detail your companion&apos;s backstory and relevant details.
+                Descreva em detalhes a história do seu companheiro e detalhes relevantes.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -217,12 +217,12 @@ export const CompanionForm = ({
             control={form.control}
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Example Conversation</FormLabel>
+                <FormLabel>Exemplo de conversa</FormLabel>
                 <FormControl>
                   <Textarea disabled={isLoading} rows={7} className="bg-background resize-none" placeholder={SEED_CHAT} {...field} />
                 </FormControl>
                 <FormDescription>
-                  Write couple of examples of a human chatting with your AI companion, write expected answers.
+                Escreva alguns exemplos de um humano conversando com seu companheiro de IA e escreva as respostas esperadas.
                 </FormDescription>
                 <FormMessage />
               </FormItem>

@@ -24,7 +24,7 @@ export const SubscriptionButton = ({
       window.location.href = response.data.url;
     } catch (error) {
       toast({
-        description: "Something went wrong",
+        description: "Algo deu errado",
         variant: "destructive",
       });
     } finally {
@@ -34,7 +34,7 @@ export const SubscriptionButton = ({
 
   return (
     <Button size="sm" variant={isPro ? "default" : "premium"} disabled={loading} onClick={onClick} >
-      {isPro ? "Manage Subscription" : "Upgrade"}
+      {isPro ? "Gerenciar assinatura" : "Atualizar"}
       {!isPro && <Sparkles className="w-4 h-4 ml-2 fill-white" />}
     </Button>
   )

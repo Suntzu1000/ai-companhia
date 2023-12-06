@@ -64,7 +64,7 @@ export const ChatHeader = ({
             </div>
           </div>
           <p className="text-xs text-muted-foreground">
-            Created by {companion.userName}
+            Criado por {companion.userName}
           </p>
         </div>
       </div>
@@ -78,11 +78,11 @@ export const ChatHeader = ({
           <DropdownMenuContent align="end">
             <DropdownMenuItem onClick={() => router.push(`/companion/${companion.id}`)}>
               <Edit className="w-4 h-4 mr-2" />
-              Edit
+              Editar
             </DropdownMenuItem>
             <DropdownMenuItem onClick={onDelete}>
               <Trash className="w-4 h-4 mr-2" />
-              Delete
+              Deletar
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

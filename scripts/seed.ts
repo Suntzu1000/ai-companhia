@@ -6,17 +6,17 @@ async function main() {
   try {
     await db.category.createMany({
       data: [
-        { name: 'Famous People' },
-        { name: 'Movies & TV' },
-        { name: 'Musicians' },
-        { name: 'Games' },
-        { name: 'Animals' },
-        { name: 'Philosophy' },
-        { name: 'Scientists' },
+        { name: 'Pessoas Famosas' },
+        { name: 'Filmes & TV' },
+        { name: 'Músicos' },
+        { name: 'Gamers' },
+        { name: 'Animais' },
+        { name: 'Filosofia' },
+        { name: 'Cientistas' },
       ],
     });
   } catch (error) {
-    console.error('Error seeding default categories:', error);
+    console.error('Erro ao propagar categorias padrão:', error);
   } finally {
     await db.$disconnect();
   }

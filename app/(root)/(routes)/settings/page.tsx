@@ -6,9 +6,9 @@ const SettingsPage = async () => {
 
   return ( 
     <div className="h-full p-4 space-y-2">
-      <h3 className="text-lg font-medium">Settings</h3>
+      <h3 className="text-lg font-medium">Configurações</h3>
       <div className="text-muted-foreground text-sm">
-        {isPro ? "You are currently on a Pro plan." : "You are currently on a free plan."}
+        {isPro ? "Você está atualmente em um plano Pro." : "Você está atualmente em um plano gratuito."}
       </div>
       <SubscriptionButton isPro={isPro} />
     </div>

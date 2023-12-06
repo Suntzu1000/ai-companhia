@@ -29,19 +29,19 @@ export const Sidebar = ({
     {
       icon: Home,
       href: '/',
-      label: "Home",
+      label: "Inicial",
       pro: false,
     },
     {
       icon: Plus,
       href: '/companion/new',
-      label: "Create",
+      label: "Criar",
       pro: true,
     },
     {
       icon: Settings,
       href: '/settings',
-      label: "Settings",
+      label: "Configurações",
       pro: false,
     },
   ];

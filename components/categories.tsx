@@ -51,7 +51,7 @@ export const Categories = ({
           !categoryId ? 'bg-primary/25' : 'bg-primary/10'
         )}
       >
-        Newest
+        Adicionar Persona
       </button>
       {data.map((item) => (
         <button
